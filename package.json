@@ -1,0 +1,23 @@
+{
+  "name": "cv-site-echarissopoulos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "develop" : " npx tailwindcss -i ./public/styles/input.css -o ./public/styles/output.css && nodemon app.js"
+  },
+  "author": "left4dev",
+  "license": "MIT",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "axios": "^0.26.0",
+    "daisyui": "^2.2.0",
+    "ejs": "^3.1.6",
+    "ejs-mate": "^3.0.0",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
+  }
+}
