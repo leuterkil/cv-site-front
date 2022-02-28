@@ -5,6 +5,7 @@
     function init() {
       elements = document.querySelectorAll('.hidden2');
       elements2 = document.querySelectorAll('.hidden3');
+      elements3 = document.querySelectorAll('.hidden4');
       windowHeight = window.innerHeight;
     }
 
@@ -41,6 +42,16 @@
         if (getDistanceBetweenElements(topElement,element) - windowHeight <= 0) {
           element.classList.remove('hidden3');
           element.classList.add('animate__animated','animate__flipInY');
+          
+        }
+      }
+      for (var i = 0; i < elements3.length; i++) {
+        var element = elements3[i];
+        var positionFromTop = elements3[i].getBoundingClientRect().top;
+        
+        if (getDistanceBetweenElements(topElement,element) - windowHeight <= 200) {
+          element.classList.remove('hidden4');
+          element.classList.add('animate__animated','animate__zoomIn');
           
         }
       }
