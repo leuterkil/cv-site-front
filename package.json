@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "develop" : " npx tailwindcss -i ./public/styles/input.css -o ./public/styles/output.css && nodemon app.js"
+    "develop" : " npx tailwindcss -i ./public/styles/input.css -o ./public/styles/output.css && nodemon app.js",
+    "start" : " npx tailwindcss -i ./public/styles/input.css -o ./public/styles/output.css && node app.js"
   },
   "author": "left4dev",
   "license": "MIT",
